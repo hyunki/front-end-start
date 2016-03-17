@@ -1,11 +1,7 @@
-for(var i=1; i<=9; i++){
+// var div = document.createElement('div');
+// div.style.border = "1px solid red";
+// div.innerHTML = "hello dddd!!";
+// document.body.appendChild(div);
 
- console.log(i + "단 시작......");
-
- for(var k=1; k<=9; k++){
-
-   console.log(i +"x"+ k + "=" + (i * k));
-   alert(1);
- }
-
-}
+// document.body.innerHTML = '<div style="1px solid red">111</div>'
+document.body.innerHTML += '<div style="1px solid red">111</div>'
