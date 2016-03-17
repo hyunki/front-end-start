@@ -43,8 +43,7 @@ prevBtn.addEventListener('click', function(){
 
     showImageList(todayPhoto, startIndex, endIndex);
 
-  }
-  else if(page === 2){
+  } else if(page === 2){
 
     startIndex = 0;
     endIndex = 3;
@@ -52,11 +51,10 @@ prevBtn.addEventListener('click', function(){
 
     showImageList(todayPhoto, startIndex, endIndex);
 
-  }
-  else {
+  } else {
 
-    startIndex = 6;
-    endIndex = 9;
+    startIndex = 3;
+    endIndex = 6;
     page = 2;
 
     showImageList(todayPhoto, startIndex, endIndex);
@@ -75,8 +73,7 @@ nextBtn.addEventListener('click', function(){
 
     showImageList(todayPhoto, startIndex, endIndex);
 
-  }
-  else if(page === 2){
+  } else if(page === 2){
 
     startIndex = 6;
     endIndex = 9;
@@ -84,8 +81,7 @@ nextBtn.addEventListener('click', function(){
 
     showImageList(todayPhoto, startIndex, endIndex);
 
-  }
-  else {
+  } else {
 
     startIndex = 0;
     endIndex = 3;
