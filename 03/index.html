@@ -5,10 +5,19 @@
   <title>Document</title>
   <style>
   #head {background-color: black; height: 200px;}
+  #head:hover {background-color: red;}
   </style>
 </head>
 <body>
-  <div id="head"></div>
+  <!-- <div id="head"></div> -->
+  <img id="img" class="hide" src="http://icon.daumcdn.net/w/c/12/05/82877085750988319.jpeg" alt="">
+  <img src="http://icon.daumcdn.net/w/c/12/05/82876693901189319.jpeg" alt="">
+  <img src="http://icon.daumcdn.net/w/c/12/05/81730673405131839.jpeg" alt="">
 <script src="./app.js"></script>
+<script>
+  var img = document.getElementById('img');
+  // img.classname = 'hide';
+  img.style.display = 'none';
+</script>
 </body>
 </html>
