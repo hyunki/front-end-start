@@ -66,31 +66,21 @@ nextBtn.addEventListener('click', function(){
   console.log('next')
 
   if(page === 1) {
-
     startIndex = 3;
     endIndex = 6;
     page = 2;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   } else if(page === 2){
-
     startIndex = 6;
     endIndex = 9;
     page = 3;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   } else {
-
     startIndex = 0;
     endIndex = 3;
     page = 1;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   }
-
 });
 
 showImageList(todayPhoto, startIndex, endIndex);

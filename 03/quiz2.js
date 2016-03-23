@@ -11,4 +11,23 @@ for(var i = 0; i < 4; i++){
     }
     str += '</div>';
 }
+
 board.innerHTML = str;
+
+var classColor = null;
+var clickClass = null;
+
+function mousedown(e) {
+	if(e.target.className == "red") {
+		e.target.className = "red";
+	} else {
+		if(clickClass != null){
+			clickClass.target.className = classColor; 
+      	}
+     	classColor = e.target.className;
+      	clickClass = e;
+      	e.target.className = "red";
+    }
+}
+
+board.addEventListener("mousedown", mousedown);
