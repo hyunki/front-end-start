@@ -8,13 +8,10 @@ var todayPhoto = [
      ,{"url":"http://media.daum.net/photo/3899","img":"http://icon.daumcdn.net/w/c/12/05/81728227037306839.jpeg","title":"생후 6개월에 프랑스로 입양됐던 아이가..","id":"20120516030614331"}
      ,{"url":"http://sports.media.daum.net/general/gallery/STARKIMYUNA/index.html","img":"http://icon.daumcdn.net/w/c/12/05/81727815537682839.jpeg","title":"&#39;교생&#39; 김연아, 스승의날에도 인기폭발","id":"20120516092003892"}
  ];
-
 var wrap = document.getElementById('wrap');
 var prevBtn = document.getElementById('prevBtn');
 var nextBtn = document.getElementById('nextBtn');
 var pageCount = document.getElementById('pageCount');
-
-
 var page = 1;
 var startIndex = 0;
 var endIndex = 3;
@@ -33,38 +30,25 @@ function showImageList(imageList, start, end){
 }
 
 prevBtn.addEventListener('click', function(){
-  console.log('prev')
-
   if(page === 1) {
-
     startIndex = 6;
     endIndex = 9;
     page = 3;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   } else if(page === 2){
-
     startIndex = 0;
     endIndex = 3;
     page = 1;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   } else {
-
     startIndex = 3;
     endIndex = 6;
     page = 2;
-
     showImageList(todayPhoto, startIndex, endIndex);
-
   }
 });
 
 nextBtn.addEventListener('click', function(){
-  console.log('next')
-
   if(page === 1) {
     startIndex = 3;
     endIndex = 6;
