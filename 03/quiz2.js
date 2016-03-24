@@ -8,11 +8,11 @@ function mousedown(e) {
 		e.target.className = "red";
 	} else {
 		if(clickClass != null){
-<<<<<<< HEAD
+
 			clickClass.target.className = classColor;
-=======
-			clickClass.target.className = classColor; 
->>>>>>> a5a761549b42d817433d088ec0426b34a60a3d7e
+
+			clickClass.target.className = classColor;
+
       	}
      	classColor = e.target.className;
       	clickClass = e;
@@ -32,8 +32,7 @@ for(var i = 0; i < 4; i++){
 }
 
 board.innerHTML = str;
-<<<<<<< HEAD
+
 board.addEventListener("mousedown", mousedown);
-=======
+
 board.addEventListener("mousedown", mousedown);
->>>>>>> a5a761549b42d817433d088ec0426b34a60a3d7e
