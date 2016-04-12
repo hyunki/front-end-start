@@ -5,13 +5,18 @@
   <title>Document</title>
 </head>
 <body>
+
+  <form id="searchBar" onsubmit="return false">
+    <input type="text" name="searchStr" id="searchStr">
+    <button id="searchBtn">Search</button>
+  </form>
   <ul id="wrap"></ul>
   <script type="text/template" id="searchListTemplate">
-    <% var search = list[i]; %>
       <li>
-        <a href="<% search.link %>"><% search.title %></a>
+        <a href="<%= list.link %>"><%= list.title %></a>
       </li>
   </script>
+  <div id="wrapBottom"></div>
 
   <script src="jsonp.js"> </script>
   <script src="tmpl.js"> </script>
