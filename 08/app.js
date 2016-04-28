@@ -47,7 +47,7 @@ var $up = '';
 
 $up = $('<div>')
       .addClass('up')
-      .hide()
+      // .hide()
       .click(function() {
         $body.animate({scrollTop:0});
       })
@@ -56,9 +56,9 @@ $up = $('<div>')
 $(window).scroll(function () {
   var y = $(this).scrollTop();
 
-  if(y >= 100) {
-    $up.fadeIn();
-  } else {
-    $up.fadeOut();
-  }
+  // if(y >= 100) {
+  //   $up.fadeIn();
+  // } else {
+  //   $up.fadeOut();
+  // }
 })
