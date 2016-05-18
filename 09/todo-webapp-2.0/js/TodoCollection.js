@@ -6,6 +6,15 @@
   app.collection = {
     set: function(arr){
       data = arr;
+      for(var i = 0; i < data.length; i++) {
+
+        if(data[i].check === true) { 
+          console.log(data[i]);
+          data.splice(i--, 1);
+        }
+
+      }
+      console.log(data);
       app.$wrap.trigger("addCollection", [data]);
     },
     toJSON: function() {
@@ -32,15 +41,17 @@
 
     },
     check: function (id) {
-      console.log('check');
 
       for (var i = 0; i < data.length; i++) {
         if (data[i].id === id) {
           console.log('find', i);
 
-          data[i].check = true;
+          data[i].check = !(data[i].check);
+          data.splice(i, 1, data[i]);
         }
       }
+      console.log(data);
+      app.$wrap.trigger("addCollection", [data]);
     }
 
   };
