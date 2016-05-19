@@ -47,7 +47,7 @@
           console.log('find', i);
 
           data[i].check = !(data[i].check);
-          data.splice(i, 1, data[i]);
+          //data.splice(i, 1, data[i]);
         }
       }
       console.log(data);
