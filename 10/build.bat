@@ -1,0 +1,1 @@
+uglifyjs js\TodoCollection.js --output .\dist\app.min.js

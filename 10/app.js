@@ -18,11 +18,28 @@
 //   console.log('concat done');
 // });
 
-var fs = require('fs');
-var result = UglifyJS.minify(['./js/config.js', './js/main.js']);
-//console.log(result.code);
+// var fs = require('fs');
+// var result = UglifyJS.minify(['./js/config.js', './js/main.js']);
+// //console.log(result.code);
 
-fs.writeFile('test.txt', result.code, function (err) {
+// fs.writeFile('test.txt', result.code, function (err) {
+//   if (err) throw err;
+//   console.log('It\'s saved!');
+// });
+
+var UglifyJS = require("uglify-js");
+var fs = require("fs");
+
+var result = UglifyJS.minify([
+  "./js/config.js",
+   "./js/util.js",
+   "./js/TodoModel.js",
+   "./js/TodoCollection.js",
+   "./js/TodoView.js",
+   "./js/tmpl.js",
+  "./js/main.js" ]);
+
+fs.writeFile('./dist/app.min.js', result.code, function (err) {
   if (err) throw err;
-  console.log('It\'s saved!');
+  console.log('done');
 });

@@ -1,0 +1,18 @@
+{
+  "name": "10",
+  "version": "1.0.0",
+  "description": "> 간단한 Todo 리스트 관리 웹어플리케이션을 만들어 본다",
+  "main": "app.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "uglify-js": "^2.6.2",
+    "pretty-bytes": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
